@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet"> 
+    <title>Расчеты для эхокардиографии</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Эхокардиография с допплерографией</h1>
+            <form action="" class="form">
+                <div class="heart-block">
+                    <div class="heart-block__column">
+                        <div class="heart-block__element">
+                            <label for="date">Текущая дата</label>
+                            <input type="date" name="date" id="date" class="heart-block__input">
+                        </div>
+
+                        <div class="heart-block__element">
+                            <label for="patient">Пациент</label>
+                            <input type="text" placeholder="Введите имя" class="heart-block__input" id="patient">
+                        </div>
+
+                        <div class="heart-block__element">
+                            <label for="patient">Рост</label>
+                            <input type="text" placeholder="Рост в см" class="heart-block__input" id="height">
+                        </div>
+
+                        <div class="heart-block__element">
+                            <label for="patient">Масса тела</label>
+                            <input type="text" placeholder="Масса тела в кг" class="heart-block__input" id="weight">
+                        </div>
+                    </div>
+
+
+                    <div class="heart-block__column">
+
+                        <div class="heart-block__element">
+                            <label for="department">Отделение</label>
+                            <select name="department" class="heart-block__input">
+                                <option>Травматология</option>
+                                <option>Кардиология</option>
+                                <option>Терапия</option>
+                                <option>Неврология</option>
+                                <option>Реанимация</option>
+                                <option>Инфекция</option>
+                                <option>Поликлинника</option>
+                            </select>
+                        </div>
+
+                        <div class="heart-block__element">
+                            <label for="age">Полных лет</label>
+                            <input type="text" placeholder="Введите возраст" class="heart-block__input" id="age">
+                        </div>
+
+                        <div class="heart-block__element">
+                            <label for="area">Площадь пов. тела (в кв.м)</label>
+                            <input type="text" placeholder="" class="heart-block__input" id="area">
+                        </div>
+
+                        <div class="heart-block__element">
+                            <label for="gender">Пол</label>
+                            <label>
+                                <input type="radio" placeholder="" id="female" name="rb1" checked class="radio"> Женский
+                            </label>
+                            <input type="radio" placeholder="" id="male" name="rb1" class="radio"> Мужской
+                        </div>
+                    </div>
+                </div>
+
+                
+            <h2 class="sub-title">Левая камера сердца</h2>
+
+                <h3 class="sub-title__el">Левое предсердие</h3>
+
+                    <div class="heart-block">
+
+                        <div class="heart-block__column">
+
+                            <div class="heart-block__element">
+                                <label for="line">Линейный размер ЛП (в см)</label>
+                                <input type="text" placeholder="В см" class="heart-block__input" id="line">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="index">Индекс ЛП (в см/кв.м)</label>
+                                <input type="text" placeholder="В см/кв.м" class="heart-block__input" id="index">
+                            </div>
+
+                        </div>
+
+                        <div class="heart-block__column">
+
+                            <div class="heart-block__element">
+                                <label for="val">Значение размера ЛП</label>
+                                <input type="text" placeholder="" class="heart-block__input" id="val">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="volume">Объем ЛП (в мл)</label>
+                                <input type="text" placeholder="" class="heart-block__input" id="volume">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <h3 class="sub-title__el">Левый желудочек</h3>
+
+                    <div class="heart-block">
+
+                        <div class="heart-block__column">
+
+                            <div class="heart-block__element">
+                                <label for="kdr">КДР (в см)</label>
+                                <input type="text" placeholder="В см" class="heart-block__input" id="kdr">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="kdi">КДИ (в см/кв.м)</label>
+                                <input type="text" placeholder="В см/кв.м" class="heart-block__input" id="kdi">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="kcr">КСР (в см)</label>
+                                <input type="text" placeholder="В см" class="heart-block__input" id="kcr">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="mj">МЖ перегородка (в см)</label>
+                                <input type="text" placeholder="В см" class="heart-block__input" id="mj">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="wall">Задняя стенка ЛЖ (в см)</label>
+                                <input type="text" placeholder="В см" class="heart-block__input" id="wall">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="mmlj">ММЛЖ (в г)</label>
+                                <input type="text" placeholder="В г" class="heart-block__input" id="mmlj">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="immlj">ИММЛЖ (в г/кв.м)</label>
+                                <input type="text" placeholder="В г/кв.м" class="heart-block__input" id="immlj">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="fraction">Фракция выброса (в %)</label>
+                                <input type="text" placeholder="В %" class="heart-block__input" id="fraction">
+                            </div>
+
+                        </div>
+
+                        <div class="heart-block__column">
+
+                            <div class="heart-block__element">
+                                <label for="valKDR">Значение КДР</label>
+                                <input type="text" placeholder="" class="heart-block__input" id="valKDR">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="kdo">КДО (в мл)</label>
+                                <input type="text" placeholder="В мл" class="heart-block__input" id="kdo">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="kco">КCO (в мл)</label>
+                                <input type="text" placeholder="В мл" class="heart-block__input" id="kco">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="valmj">Значение МЖ перегородки</label>
+                                <input type="text" placeholder="" class="heart-block__input" id="valmj">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="valwall">Значение ЛЖ</label>
+                                <input type="text" placeholder="" class="heart-block__input" id="valwall">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="shock">Ударный объем (в мл)</label>
+                                <input type="text" placeholder="В мл" class="heart-block__input" id="shock">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="valimmlj">Значение ИММЛЖ</label>
+                                <input type="text" placeholder="" class="heart-block__input" id="valimmlj">
+                            </div>
+
+                            <div class="heart-block__element">
+                                <label for="valfraction">Значение фракции</label>
+                                <input type="text" placeholder="" class="heart-block__input" id="valfraction">
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <h3 class="sub-title__el">Тканевая допплерография</h3>
+
+                    <div class="heart-block">
+
+                        <div class="heart-block__column">
+
+                            <div class="heart-block__element">
+                                <label for="sistol">Нарушения систолической функции</label>
+                                <select name="sistol" class="heart-block__input">
+                                    <option>Выявлено</option>
+                                    <option>Не выявлено</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                <button class="push">Рассчет</button>
+            </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

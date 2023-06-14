@@ -1,0 +1,84 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 14 px;
+    background-image: url("abstract-paper-background-concept.jpg");
+    background-size: 100%;
+
+}
+
+.container {
+    
+    width: 800px;
+    margin: 0 auto;
+    background: rgb(229, 250, 136, 0.8);
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.form {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+/*_______Personal_______*/
+
+.heart-block__element {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.heart-block {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.heart-block__column {
+    align-self: flex-start;
+    flex-direction: row-reverse;
+    min-width: 200px;
+}
+
+.heart-block__input {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border: 1px solid #000;
+    display: block;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.radio {
+    display: block;
+    padding: 5px;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.sub-title__el {
+    text-align: center;
+}
+
+.push {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #94db21de;
+    background: #94db21;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+}
+
+.push:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
